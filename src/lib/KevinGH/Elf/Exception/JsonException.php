@@ -47,7 +47,7 @@ class JsonException extends InvalidArgumentException
      *
      * @return JsonException The exception.
      */
-    public function errors(array $errors)
+    public static function errors(array $errors)
     {
         return new self('The JSON string is not valid.', $errors);
     }
@@ -67,7 +67,7 @@ class JsonException extends InvalidArgumentException
      *
      * @return JsonException The exception.
      */
-    public function invalidUtf8()
+    public static function invalidUtf8()
     {
         return new self('The JSON string is not valid UTF-8 string.');
     }
