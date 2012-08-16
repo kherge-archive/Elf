@@ -1,0 +1,27 @@
+{
+    "hash": "bba62f42d4df6b4706dd031ad8eda0c1",
+    "packages": [
+        {
+            "package": "justinrainbow/json-schema",
+            "version": "1.1.0"
+        },
+        {
+            "package": "seld/jsonlint",
+            "version": "1.0.0"
+        },
+        {
+            "package": "symfony/console",
+            "version": "v2.1.0-RC1"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "beta",
+    "stability-flags": [
+
+    ]
+}
