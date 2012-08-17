@@ -26,7 +26,7 @@ class GitException extends RuntimeException
      *
      * @param Process $process The process.
      */
-    public function process(Process $process)
+    public static function process(Process $process)
     {
         return new self($process->getOutput() . $process->getErrorOutput());
     }
