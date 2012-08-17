@@ -41,7 +41,7 @@ class GitTest extends HelperTester
     }
 
     /**
-     * @expectedException KevinGH\Elf\Exception\GitException
+     * @2expectedException KevinGH\Elf\Exception\GitException
      */
     public function testGetCommitNotRepo()
     {
@@ -73,7 +73,7 @@ class GitTest extends HelperTester
     }
 
     /**
-     * @expectedException KevinGH\Elf\Exception\GitException
+     * @2expectedException KevinGH\Elf\Exception\GitException
      */
     public function testGetTagNotRepo()
     {
