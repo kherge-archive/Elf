@@ -1,5 +1,5 @@
 {
-    "hash": "bba62f42d4df6b4706dd031ad8eda0c1",
+    "hash": "e55aa0cbb3d1ac1c9a0a113dd547bd39",
     "packages": [
         {
             "package": "justinrainbow/json-schema",
@@ -11,6 +11,10 @@
         },
         {
             "package": "symfony/console",
+            "version": "v2.1.0-RC1"
+        },
+        {
+            "package": "symfony/process",
             "version": "v2.1.0-RC1"
         }
     ],
