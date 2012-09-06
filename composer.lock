@@ -1,5 +1,5 @@
 {
-    "hash": "e55aa0cbb3d1ac1c9a0a113dd547bd39",
+    "hash": "7d816f2479e6ff64a8300f7b77c82857",
     "packages": [
         {
             "package": "justinrainbow/json-schema",
@@ -11,11 +11,11 @@
         },
         {
             "package": "symfony/console",
-            "version": "v2.1.0-RC1"
+            "version": "v2.1.0"
         },
         {
             "package": "symfony/process",
-            "version": "v2.1.0-RC1"
+            "version": "v2.1.0"
         }
     ],
     "packages-dev": [
@@ -24,7 +24,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "stability-flags": [
 
     ]
