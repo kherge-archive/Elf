@@ -17,7 +17,7 @@ use Symfony\Component\Process\Process;
 /**
  * A Git exception.
  *
- * @author Kevin Herrera <me@kevingh.com>
+ * @author Kevin Herrera <kevin@herrera.io>
  */
 class GitException extends RuntimeException
 {
@@ -25,6 +25,8 @@ class GitException extends RuntimeException
      * Creates a new exception using the Process's output.
      *
      * @param Process $process The process.
+     *
+     * @return GitException The new exception.
      */
     public static function process(Process $process)
     {

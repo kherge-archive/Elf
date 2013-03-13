@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.travis.yml
+bin/
 composer.lock
 coverage/
 src/vendors/

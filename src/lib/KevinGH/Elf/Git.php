@@ -20,7 +20,7 @@ use Symfony\Component\Process\Process;
 /**
  * Provides support for Git repositories.
  *
- * @author Kevin Herrera <me@kevingh.com>
+ * @author Kevin Herrera <kevin@herrera.io>
  */
 class Git extends Helper
 {
@@ -38,6 +38,8 @@ class Git extends Helper
      * @param null|string $path  The repository path.
      *
      * @return string The hash.
+     *
+     * @throws GitException If there was an error using Git.
      */
     public function getCommit($short = true, $path = null)
     {
@@ -65,6 +67,8 @@ class Git extends Helper
      * @param null|string $path The repository path.
      *
      * @return string The tag.
+     *
+     * @throws GitException If there was an error using Git.
      */
     public function getTag($path = null)
     {

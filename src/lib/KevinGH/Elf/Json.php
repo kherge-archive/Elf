@@ -22,7 +22,7 @@ use Symfony\Component\Console\Helper\Helper;
 /**
  * Provides support for parsing and validating JSON data.
  *
- * @author Kevin Herrera <me@kevingh.com>
+ * @author Kevin Herrera <kevin@herrera.io>
  */
 class Json extends Helper
 {
@@ -39,6 +39,8 @@ class Json extends Helper
      *
      * @throws JsonException  If the JSON string is invalid.
      * @throws ParseException If the JSON string is invalid.
+     *
+     * @throws ParsingException If the JSON string contains lint.
      *
      * @api
      */
@@ -58,6 +60,10 @@ class Json extends Helper
      * @param boolean $assoc Convert objects to associate arrays?
      * @param integer $depth The maximum recursion depth.
      *
+     * @return mixed The parsed data.
+     *
+     * @throws JsonException If the JSON string could not be parsed.
+     *
      * @api
      */
     public function parse($json, $assoc = false, $depth = 512)
@@ -68,7 +74,9 @@ class Json extends Helper
             }
 
             $this->checkSyntax($json);
+            // @codeCoverageIgnoreStart
         }
+        // @codeCoverageIgnoreEnd
 
         return $data;
     }
@@ -79,6 +87,8 @@ class Json extends Helper
      * @param string  $file  The JSON file.
      * @param boolean $assoc Convert objects to associate arrays?
      * @param integer $depth The maximum recursion depth.
+     *
+     * @return mixed The parsed data.
      *
      * @throws InvalidArgumentException If the JSON file does not exist.
      * @throws RuntimeException         If the JSON file could not be read.

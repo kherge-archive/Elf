@@ -16,7 +16,7 @@ use InvalidArgumentException;
 /**
  * A JSON exception.
  *
- * @author Kevin Herrera <me@kevingh.com>
+ * @author Kevin Herrera <kevin@herrera.io>
  */
 class JsonException extends InvalidArgumentException
 {

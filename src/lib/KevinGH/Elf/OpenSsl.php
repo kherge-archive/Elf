@@ -18,7 +18,7 @@ use Symfony\Component\Console\Helper\Helper;
 /**
  * Creates private and public keys using OpenSSL.
  *
- * @author Kevin Herrera <me@kevingh.com>
+ * @author Kevin Herrera <kevin@herrera.io>
  */
 class OpenSsl extends Helper
 {
