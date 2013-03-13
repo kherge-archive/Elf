@@ -5,7 +5,7 @@ php:
     - 5.4
 
 before_script:
-    - git config user.name "Test User"
-    - git config user.email test@example.com
+    - git config --global user.name "Test User"
+    - git config --global user.email test@example.com
     - composer self-update
     - composer install --dev
