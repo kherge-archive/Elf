@@ -23,13 +23,12 @@ class OpenSslTest extends TestCase
 
     public function testCreatePrivateKey()
     {
+        $type = array_keys($this->helper->getSupportedKeyTypes());
+        $type = array_shift($type);
+
         $this->assertRegExp(
             '/PRIVATE KEY/',
-            $this->helper->createPrivateKey(
-                'test',
-                array_shift(array_keys($this->helper->getSupportedKeyTypes())),
-                1024
-            )
+            $this->helper->createPrivateKey('test', $type, 1024)
         );
     }
 
