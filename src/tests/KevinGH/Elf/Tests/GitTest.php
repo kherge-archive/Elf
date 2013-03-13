@@ -121,6 +121,7 @@ class GitTest extends TestCase
 
         $process = new ProcessBuilder($arguments);
         $process = $process->getProcess();
+        $process->setWorkingDirectory($this->dir);
 
         if (0 !== $process->run()) {
             throw new RuntimeException(
