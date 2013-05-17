@@ -1,5 +1,7 @@
 # Elf
 
+> I am no longer maintaining this library. If you would like to take over development of this project, please email me.
+
 [![Build Status](https://secure.travis-ci.org/kherge/Elf.png?branch=master)](http://travis-ci.org/kherge/Elf)
 
 Elf is a collection of helpers for the Symfony Console component.
